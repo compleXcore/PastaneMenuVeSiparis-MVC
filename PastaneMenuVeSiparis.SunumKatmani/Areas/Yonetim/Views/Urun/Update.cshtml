@@ -1,0 +1,49 @@
+﻿@using PastaneMenuVeSiparis.VarlikKatmani
+@model Urun
+@{
+    ViewBag.Title = "Update";
+}
+
+<div class="row">
+    <div class="col-12">
+        <h2>Ürün Güncelle</h2>
+    </div>
+</div>
+<hr />
+@using (Html.BeginForm("Update", "Urun", FormMethod.Post))
+{
+    <div class="row mb-3">
+        @Html.LabelFor(x => x.Ad, new { @class = "col-form-label col-md-2" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(x => x.Ad, new { @class = "form-control" })
+            @Html.ValidationMessageFor(x => x.Ad, "", new { @class = "text-danger" })
+        </div>
+    </div>
+    <div class="row mb-3">
+        @Html.LabelFor(x => x.Fiyat, new { @class = "col-form-label col-md-2" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(x => x.Fiyat, new { @class = "form-control" })
+            @Html.ValidationMessageFor(x => x.Fiyat, "", new { @class = "text-danger" })
+        </div>
+    </div>
+    <div class="row mb-3">
+        @Html.LabelFor(x => x.Aciklama, new { @class = "col-form-label col-md-2" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(x => x.Aciklama, new { @class = "form-control" })
+            @Html.ValidationMessageFor(x => x.Aciklama, "", new { @class = "text-danger" })
+        </div>
+    </div>
+    <div class="row mb-3">
+        @Html.LabelFor(x => x.Kategori, new { @class = "col-form-label col-md-2" })
+        <div class="col-md-10">
+            @Html.DropDownListFor(x => x.KategoriId, ViewBag.Kategoriler as SelectList, new { @class = "form-control" })
+            @Html.ValidationMessageFor(x => x.KategoriId, "", new { @class = "text-danger" })
+        </div>
+    </div>
+    <div class="row mb-3">
+        <div class="offset-md-2 col-md-10">
+            <a href="@Url.Action("List", "Urun")" class="btn btn-danger">İptal</a>
+            <button type="submit" class="btn btn-primary">Kaydet</button>
+        </div>
+    </div>
+}

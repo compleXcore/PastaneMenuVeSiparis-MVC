@@ -1,0 +1,49 @@
+﻿@using PastaneMenuVeSiparis.VarlikKatmani
+@model List<Urun>
+
+@{
+    ViewBag.Title = "Urun";
+}
+
+<div class="row">
+    <div class="col-12">
+        <h2>Ürünlerin Listesi</h2>
+    </div>
+</div>
+<hr />
+<div class="row">
+    <div class="col-12">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Ürün Id</th>
+                    <th>Ürün Ad</th>
+                    <th>Ürün Fiyatı</th>
+                    <th>Ürün Kategori Id</th>
+                    <th>Ürün Kategori Ad</th>
+                    <th>Ürün Açıklama</th>
+                    <th>
+                        <a href="@Url.Action("Add", "Urun")" class="btn btn-primary">Ürün Ekle</a>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.Id</td>
+                        <td>@item.Ad</td>
+                        <td>@item.Fiyat.ToString("C2")</td>
+                        <td>@item.KategoriId</td>
+                        <td>@item.Kategori.Ad</td>
+                        <td>@item.Aciklama</td>
+                        <td>
+                            <a href="@Url.Action("Remove", "Urun", new { id = item.Id })" class="btn btn-sm btn-danger"><i class="fa fa-trash"></i> Sil</a>
+                            <a href="@Url.Action("Update","Urun", new { id = item.Id })" class="btn btn-sm btn-success"><i class="fa fa-pencil"></i> Düzenle</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

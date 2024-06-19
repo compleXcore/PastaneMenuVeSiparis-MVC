@@ -1,0 +1,43 @@
+﻿@using PastaneMenuVeSiparis.VarlikKatmani
+@model List<Kategori>
+
+@{
+    ViewBag.Title = "List";
+}
+
+
+<div class="row">
+    <div class="col-12">
+        <h2>Kategori Listesi</h2>
+    </div>
+</div>
+<hr />
+<div class="row">
+    <div class="col-12">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Ad</th>
+                    <th>
+                        <a href="@Url.Action("Add", "Kategori")" class="btn btn-primary">Kategori Ekle</a>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.Id</td>
+                        <td>@item.Ad</td>
+                        <td>
+                            <a href="@Url.Action("Remove", "Kategori", new { id = item.Id })" class="btn btn-sm btn-danger"><i class="fa fa-trash"></i> Sil</a>
+                            <a href="@Url.Action("Update","Kategori", new { id = item.Id })" class="btn btn-sm btn-success"><i class="fa fa-pencil"></i> Düzenle</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+

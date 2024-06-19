@@ -1,0 +1,102 @@
+﻿@using PastaneMenuVeSiparis.VarlikKatmani
+
+@model List<Urun>
+
+@{
+    ViewBag.Title = "List";
+}
+
+<style>
+    .card {
+        width: 300px;
+        height: 310px;
+    }
+
+    .image {
+        position: absolute;
+        right: 12px;
+        top: 10px;
+    }
+
+    .main-heading {
+        font-size: 23px;
+        color: black !important;
+    }
+</style>
+
+<div class="col-12">
+    <div class="row">
+        <div class="col-12">
+            @using (Html.BeginForm("List", "Urunler", FormMethod.Get))
+            {
+                <div class="input-group mb-3">
+                    <input id="aranan" name="aranan" type="text" class="form-control" placeholder="Ürün Adı, Kategori Adı ve Fiyatına göre ara..." aria-label="Ara" aria-describedby="btnAra">
+                    <button class="btn btn-outline-primary" type="submit" id="btnAra"><i class="fa fa-search"></i> Ara</button>
+                </div>
+            }
+        </div>
+    </div>
+    <div class="row">
+        @foreach (var item in Model)
+        {
+            <div class="card p-4" style="margin-right:20px; margin-top:15px;">
+                <div class="d-flex justify-content-between align-items-center ">
+                    <div class="mt-2">
+                        <div style="margin-top:110px">
+                            <h6 class="text-uppercase mb-0">@item.Fiyat.ToString("C2")</h6>
+                            <h6 class="main-heading mt-0">@item.Ad</h6>
+                        </div>
+                    </div>
+                    <div class="image">
+                        <img src="@Url.Content(item.image)" alt="@item.Ad" width="150">
+                    </div>
+                </div>
+                <p>@item.Aciklama </p>
+
+                @if (Session["user"] != null && (Session["user"] as PastaneMenuVeSiparis.VarlikKatmani.Kullanici).Yetki == PastaneMenuVeSiparis.VarlikKatmani.Enums.Yetkiler.KULLANICI)
+                {
+                    <button onclick="SepeteEkle(@item.Id)" class="btn btn-success btn-xs"><i class="fa fa-shopping-basket"></i> Sepete Ekle</button>
+                }
+                else
+                {
+                    <a href="@Url.Action("Login", "Kullanici", new { area = "Yonetim" })" class="btn btn-success btn-xs"><i class="fa fa-shopping-basket"></i> SepeteEkle</a>
+                }
+            </div>
+        }
+    </div>
+</div>
+
+@section myScripts{
+    <script>
+        toastr.options = {
+            "closeButton": false,
+            "debug": false,
+            "newestOnTop": false,
+            "progressBar": true,
+            "positionClass": "toast-top-right",
+            "preventDuplicates": false,
+            "onclick": null,
+            "showDuration": "300",
+            "hideDuration": "1000",
+            "timeOut": "5000",
+            "extendedTimeOut": "1000",
+            "showEasing": "swing",
+            "hideEasing": "linear",
+            "showMethod": "fadeIn",
+            "hideMethod": "fadeOut"
+        }
+
+        SepeteEkle = function (id) {
+            $.ajax({
+                   url: '@Url.Action("SepeteEkle", "Urunler")/'+id,
+                   method: 'GET',
+                        success: function (response) {
+                        toastr.success("Ürün Sepete Eklendi!")
+                   },
+                   error: function (ex) {
+                        toastr.info("Sepete Eklenemedi!")
+                   }
+            })
+        }
+    </script>
+}

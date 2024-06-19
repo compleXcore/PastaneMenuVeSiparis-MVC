@@ -1,0 +1,18 @@
+D:\Ders&Calisma\2. SINIF\_proje\donem2\PastaneMenuVeSiparis\PastaneMenuVeSiparis.VarlikKatmani\bin\Debug\PastaneMenuVeSiparis.VarlikKatmani.dll
+D:\Ders&Calisma\2. SINIF\_proje\donem2\PastaneMenuVeSiparis\PastaneMenuVeSiparis.VarlikKatmani\bin\Debug\PastaneMenuVeSiparis.VarlikKatmani.pdb
+D:\Ders&Calisma\2. SINIF\_proje\donem2\PastaneMenuVeSiparis\PastaneMenuVeSiparis.VarlikKatmani\obj\Debug\PastaneMenuVeSiparis.VarlikKatmani.csproj.AssemblyReference.cache
+D:\Ders&Calisma\2. SINIF\_proje\donem2\PastaneMenuVeSiparis\PastaneMenuVeSiparis.VarlikKatmani\obj\Debug\PastaneMenuVeSiparis.VarlikKatmani.csproj.CoreCompileInputs.cache
+D:\Ders&Calisma\2. SINIF\_proje\donem2\PastaneMenuVeSiparis\PastaneMenuVeSiparis.VarlikKatmani\obj\Debug\PastaneMenuVeSiparis.VarlikKatmani.dll
+D:\Ders&Calisma\2. SINIF\_proje\donem2\PastaneMenuVeSiparis\PastaneMenuVeSiparis.VarlikKatmani\obj\Debug\PastaneMenuVeSiparis.VarlikKatmani.pdb
+C:\Users\xarex\Desktop\PastaneMenuVeSiparis\PastaneMenuVeSiparis.VarlikKatmani\bin\Debug\PastaneMenuVeSiparis.VarlikKatmani.dll
+C:\Users\xarex\Desktop\PastaneMenuVeSiparis\PastaneMenuVeSiparis.VarlikKatmani\bin\Debug\PastaneMenuVeSiparis.VarlikKatmani.pdb
+C:\Users\xarex\Desktop\PastaneMenuVeSiparis\PastaneMenuVeSiparis.VarlikKatmani\obj\Debug\PastaneMenuVeSiparis.VarlikKatmani.csproj.AssemblyReference.cache
+C:\Users\xarex\Desktop\PastaneMenuVeSiparis\PastaneMenuVeSiparis.VarlikKatmani\obj\Debug\PastaneMenuVeSiparis.VarlikKatmani.csproj.CoreCompileInputs.cache
+C:\Users\xarex\Desktop\PastaneMenuVeSiparis\PastaneMenuVeSiparis.VarlikKatmani\obj\Debug\PastaneMenuVeSiparis.VarlikKatmani.dll
+C:\Users\xarex\Desktop\PastaneMenuVeSiparis\PastaneMenuVeSiparis.VarlikKatmani\obj\Debug\PastaneMenuVeSiparis.VarlikKatmani.pdb
+C:\Users\xarex\Desktop\internet\PastaneMenuVeSiparis\PastaneMenuVeSiparis.VarlikKatmani\bin\Debug\PastaneMenuVeSiparis.VarlikKatmani.dll
+C:\Users\xarex\Desktop\internet\PastaneMenuVeSiparis\PastaneMenuVeSiparis.VarlikKatmani\bin\Debug\PastaneMenuVeSiparis.VarlikKatmani.pdb
+C:\Users\xarex\Desktop\internet\PastaneMenuVeSiparis\PastaneMenuVeSiparis.VarlikKatmani\obj\Debug\PastaneMenuVeSiparis.VarlikKatmani.csproj.AssemblyReference.cache
+C:\Users\xarex\Desktop\internet\PastaneMenuVeSiparis\PastaneMenuVeSiparis.VarlikKatmani\obj\Debug\PastaneMenuVeSiparis.VarlikKatmani.csproj.CoreCompileInputs.cache
+C:\Users\xarex\Desktop\internet\PastaneMenuVeSiparis\PastaneMenuVeSiparis.VarlikKatmani\obj\Debug\PastaneMenuVeSiparis.VarlikKatmani.dll
+C:\Users\xarex\Desktop\internet\PastaneMenuVeSiparis\PastaneMenuVeSiparis.VarlikKatmani\obj\Debug\PastaneMenuVeSiparis.VarlikKatmani.pdb

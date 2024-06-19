@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/font-awesome.min.css" rel="stylesheet" />
+    <link href="~/Content/Site.css" rel="stylesheet" />
+    <link href="~/Content/toastr.min.css" rel="stylesheet" />
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    @if (Session["user"] != null && (Session["user"] as PastaneMenuVeSiparis.VarlikKatmani.Kullanici).Yetki == PastaneMenuVeSiparis.VarlikKatmani.Enums.Yetkiler.YONETICI)
+                    {
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="@Url.Action("List", "Siparis", new { area = "Yonetim"})">Siparişler</a></li>
+                        <li class="nav-item"><a class="nav-link" href="@Url.Action("List", "Urun", new { area = "Yonetim"})">Ürünler</a></li>
+                        <li class="nav-item"><a class="nav-link" href="@Url.Action("List", "Kategori", new { area = "Yonetim"})">Kategoriler</a></li>
+                        <li class="nav-item"><a class="nav-link" href="@Url.Action("List", "Kullanici", new { area = "Yonetim"})">Kullanıcılar</a></li>
+                        <li class="nav-item"><a class="nav-link" href="@Url.Action("Logout", "Kullanici", new { area = "Yonetim"})">Çıkış Yap</a></li>
+                    }
+                    else if (Session["user"] != null && (Session["user"] as PastaneMenuVeSiparis.VarlikKatmani.Kullanici).Yetki == PastaneMenuVeSiparis.VarlikKatmani.Enums.Yetkiler.YETKILI)
+                    {
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="@Url.Action("List", "Siparis", new { area = "Yonetim"})">Siparişler</a></li>
+                        <li class="nav-item"><a class="nav-link" href="@Url.Action("List", "Urun", new { area = "Yonetim"})">Ürünler</a></li>
+                        <li class="nav-item"><a class="nav-link" href="@Url.Action("List", "Kategori", new { area = "Yonetim"})">Kategoriler</a></li>
+                        <li class="nav-item"><a class="nav-link" href="@Url.Action("Logout", "Kullanici", new { area = "Yonetim"})">Çıkış Yap</a></li>
+                    }
+                    else if (Session["user"] != null && (Session["user"] as PastaneMenuVeSiparis.VarlikKatmani.Kullanici).Yetki == PastaneMenuVeSiparis.VarlikKatmani.Enums.Yetkiler.KULLANICI)
+                    {
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="@Url.Action("List", "Siparislerim", new { area = ""})">Siparişlerim</a></li>
+                        <li class="nav-item"><a class="nav-link" href="@Url.Action("List", "Urunler", new { area = ""})">Ürünler</a></li>
+                        <li class="nav-item"><a class="nav-link" href="@Url.Action("List", "Sepet")">Sepet</a></li>
+                        <li class="nav-item"><a class="nav-link" href="@Url.Action("Logout", "Kullanici", new { area = "Yonetim"})">Çıkış Yap</a></li>
+                    }
+                    else
+                    {
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="@Url.Action("List", "Urunler", new { area = ""})">Ürünler</a></li>
+                        <li class="nav-item"><a class="nav-link" href="@Url.Action("List", "Sepet", new { area = ""})">Sepet</a></li>
+                        <li class="nav-item"><a class="nav-link" href="@Url.Action("Login", "Kullanici", new { area = "Yonetim"})">Giriş Yap</a></li>
+                        <li class="nav-item"><a class="nav-link" href="@Url.Action("Register", "Kullanici", new { area = "Yonetim"})">Kayıt Ol</a></li>
+                    }
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+        </footer>
+    </div>
+
+    <script src="~/Scripts/jquery-3.7.1.min.js"></script>
+    <script src="~/Scripts/bootstrap.bundle.min.js"></script>
+    <script src="~/Scripts/toastr.min.js"></script>
+    @RenderSection("myScripts", false)
+</body>
+</html>

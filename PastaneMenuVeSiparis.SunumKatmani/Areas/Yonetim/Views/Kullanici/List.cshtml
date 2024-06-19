@@ -1,0 +1,48 @@
+﻿@using PastaneMenuVeSiparis.VarlikKatmani
+@model List<Kullanici>
+
+@{
+    ViewBag.Title = "List";
+}
+
+<div class="row">
+    <div class="col-12">
+        <h2>Yetkililerin Listesi</h2>
+    </div>
+</div>
+<hr />
+<div class="row">
+    <div class="col-12">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Yetkili Id</th>
+                    <th>Yetkili Adı</th>
+                    <th>Yetkili Adres</th>
+                    <th>Yetkili Telno</th>
+                    <th>Yetkili Yetkisi</th>
+                    <th>
+                        <a href="@Url.Action("Add", "Kullanici")" class="btn btn-primary">Yetkili Ekle</a>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.Id</td>
+                        <td>@item.KullaniciAdi</td>
+                        <td>@item.Adres</td>
+                        <td>@item.Telno</td>
+                        <td>@item.Yetki</td>
+                        <td>
+                            <a href="@Url.Action("Remove", "Kullanici", new { id = item.Id })" class="btn btn-sm btn-danger"><i class="fa fa-trash"></i> Sil</a>
+                            <a href="@Url.Action("Update", "Kullanici", new { id = item.Id })" class="btn btn-sm btn-primary"><i class="fa fa-pencil-square"></i> Düzenle</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+    </div>
+</div>

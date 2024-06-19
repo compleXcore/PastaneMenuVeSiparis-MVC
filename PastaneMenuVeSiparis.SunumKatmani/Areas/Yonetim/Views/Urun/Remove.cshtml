@@ -1,0 +1,28 @@
+﻿@using PastaneMenuVeSiparis.VarlikKatmani
+@model Urun
+@{
+    ViewBag.Title = "Remove";
+}
+
+
+<div class="row">
+    <div class="col-12">
+        <h2>Ürün Sil</h2>
+    </div>
+</div>
+<hr />
+@using (Html.BeginForm("Remove", "Urun", FormMethod.Post))
+{
+    <div class="row mb-3">
+        <div class="col-12">
+            <b>@Model.Ad</b> adlı ürünü silmek istiyor musun?
+        </div>
+    </div>
+    <div class="row mb-3">
+        <div class="offset-md-2 col-md-10">
+            <a href="@Url.Action("List", "Urun")" class="btn btn-danger">İptal</a>
+            <button type="submit" class="btn btn-primary">Kaydet</button>
+        </div>
+    </div>
+}
+

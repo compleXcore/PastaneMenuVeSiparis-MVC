@@ -1,0 +1,32 @@
+﻿@using PastaneMenuVeSiparis.VarlikKatmani
+@model Kullanici
+@{
+    ViewBag.Title = "Remove";
+}
+
+
+<div class="row">
+    <div class="col-12">
+        <h2>Yönetici Sil</h2>
+    </div>
+</div>
+<hr />
+@using (Html.BeginForm("Remove", "Kullanici", FormMethod.Post))
+{
+    <div class="row mb-3">
+        <div class="col-12">
+            @if (Session["user"] != null && (Session["user"] as PastaneMenuVeSiparis.VarlikKatmani.Kullanici).Id == Model.Id)
+            {
+                <h4><b>Size ait olan bir hesabı silmek üzeresiniz. Bu işlemi yapmak istediğine emin misin? Bu işlem sonrası oturumdan otomatik olarak çıkarılacaksın.</b></h4>
+
+            }
+            <h5><b>@Model.KullaniciAdi</b></h5> Hesabı silinsin mi?
+        </div>
+    </div>
+    <div class="row mb-3">
+        <div class="offset-md-2 col-md-10">
+            <a href="@Url.Action("List", "Kullanici")" class="btn btn-danger">İptal</a>
+            <button type="submit" class="btn btn-primary">Kaydet</button>
+        </div>
+    </div>
+}

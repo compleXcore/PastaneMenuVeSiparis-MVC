@@ -1,0 +1,183 @@
+﻿@using PastaneMenuVeSiparis.VarlikKatmani
+@model List<SiparisDetay>
+
+@{
+    ViewBag.Title = "List";
+    decimal _toplamfiyat = 0;
+}
+
+<style>
+    .title {
+        margin-bottom: 5vh;
+    }
+
+    .card {
+        margin: auto;
+        max-width: 950px;
+        width: 90%;
+        box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        border-radius: 1rem;
+        border: transparent;
+    }
+
+    .cart {
+        background-color: #fff;
+        padding: 4vh 5vh;
+        border-bottom-left-radius: 1rem;
+        border-top-left-radius: 1rem;
+    }
+
+    .summary {
+        background-color: #ddd;
+        border-top-right-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+        padding: 4vh;
+        color: rgb(65, 65, 65);
+    }
+
+        .summary .col-2 {
+            padding: 0;
+        }
+
+        .summary .col-10 {
+            padding: 0;
+        }
+
+    .row {
+        margin: 0;
+    }
+
+    .title b {
+        font-size: 1.5rem;
+    }
+
+    .main {
+        margin: 0;
+        padding: 2vh 0;
+        width: 100%;
+    }
+
+    .col-2, .col {
+        padding: 0 1vh;
+    }
+
+    a {
+        padding: 0 1vh;
+    }
+
+    .close {
+        margin-left: auto;
+        font-size: 0.7rem;
+    }
+
+    img {
+        width: 3.5rem;
+    }
+
+    .back-to-shop {
+        margin-top: 4.5rem;
+    }
+
+    h5 {
+        margin-top: 4vh;
+    }
+
+    hr {
+        margin-top: 1.25rem;
+    }
+
+    form {
+        padding: 2vh 0;
+    }
+
+
+    #btn-onay {
+        background-color: #000;
+        border-color: #000;
+        color: white;
+        width: 100%;
+        font-size: 0.7rem;
+        margin-top: 4vh;
+        padding: 1vh;
+        border-radius: 0;
+    }
+
+    #btn-onay:focus {
+        box-shadow: none;
+        outline: none;
+        box-shadow: none;
+        color: white;
+        -webkit-box-shadow: none;
+        -webkit-user-select: none;
+        transition: none;
+    }
+
+    #btn-onay:hover {
+        color: white;
+    }
+
+    a {
+        color: black;
+        text-decoration: none;
+    }
+</style>
+<div class="col-12">
+    <div class="row">
+        <div class="card">
+            <div class="row">
+                <div class="col-md-8 cart">
+                    @if (Model != null && Model.Count > 0)
+                    {
+                        <div class="title">
+                            <div class="row">
+                                <div class="col"><h4><b>Sepet</b></h4></div>
+                                <div class="col align-self-center text-center text-muted">Adet</div>
+                                <div class="col align-self-center text-center text-muted">@Model.Count Ürün</div>
+                            </div>
+                        </div>
+                        foreach (var item in Model)
+                        {
+                            _toplamfiyat+=item.Tutar;
+                            <div class="row border-top border-bottom">
+                                <div class="row main align-items-center">
+                                    <div class="col-2"><img class="img-fluid" src="@Url.Content(item.Urun.image)"></div>
+                                    <div class="col">
+                                        <div class="row text-muted">@item.Urun.Kategori.Ad</div>
+                                        <div class="row">@item.Urun.Ad</div>
+                                    </div>
+                                    <div class="col">
+                                        <a href="@Url.Action("UrunMiktarAzalt", "Sepet", new { id = item.Urun.Id })">
+                                            &downarrow;
+                                        </a>
+                                        <a class="border border-black">@item.Adet</a>
+                                        <a href="@Url.Action("UrunMiktarArttir", "Sepet", new { id = item.Urun.Id })">
+                                            &uparrow;
+                                        </a>
+                                    </div>
+                                    <div class="col">@item.Tutar.ToString("C2")</div>
+                                    <div class="col"><a href="@Url.Action("Remove", "Sepet", new { id = item.Urun.Id })" class="btn btn-sm btn-danger"><i class="fa fa-trash"></i> </a></div>
+                                </div>
+                            </div>
+                        }
+                    }
+                    else
+                    {
+                        <h1>Sepet Boş</h1>
+                    }
+                    <div class="back-to-shop"><a href="@Url.Action("List", "Urunler")">&leftarrow;<span class="text-muted">Alışverişe Geri Dön</span></a></div>
+                </div>
+                @if (Model != null && Model.Count > 0)
+                {
+                    <div class="col-md-4 summary">
+                        <div><h5><b>Özet</b></h5></div>
+                        <div class="row" style="border-top: 1px solid rgba(0,0,0,.1); padding: 2vh 0;">
+                            <div class="col">Toplam Fiyat</div>
+                            <div class="col text-right">@_toplamfiyat.ToString("C2")</div>
+                        </div>
+                        <a href="@Url.Action("SepetOnayla", "Sepet")" class="btn" id="btn-onay">&#x02705; Siparişi Onayla</a>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>

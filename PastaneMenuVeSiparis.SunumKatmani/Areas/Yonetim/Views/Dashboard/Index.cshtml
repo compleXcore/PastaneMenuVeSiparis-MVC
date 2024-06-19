@@ -1,0 +1,33 @@
+﻿@using PastaneMenuVeSiparis.IsKatmani
+
+@{
+    ViewBag.Title = "Index";
+
+    SiparisManager siparisManager = new SiparisManager();
+    int countSiparis = siparisManager.TeslimEdilenSiparisSayisi();
+    KullaniciManager kullaniciManager = new KullaniciManager();
+    int countKullanici = kullaniciManager.ToplamKullaniciSayisi();
+}
+
+<div class="row">
+    <div class="col-12">
+        <div class="row">
+            <div class="col-6">
+                <div class="card text-bg-success mb-3" style="max-width: 20rem; height:10rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Sipariş Sayısı</h5>
+                        <p class="card-text">Başarıyla Teslim Edilen Sipariş Sayısı<h3><b>@countSiparis</b></h3></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="card text-bg-primary mb-3" style="max-width: 20rem; height:10rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Kullanıcı Sayısı</h5>
+                        <p class="card-text">Siteye üye olan kullanıcı sayısı<h3><b>@countKullanici</b></h3></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

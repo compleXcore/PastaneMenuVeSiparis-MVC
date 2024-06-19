@@ -1,0 +1,72 @@
+﻿@using PastaneMenuVeSiparis.VarlikKatmani
+@using PastaneMenuVeSiparis.IsKatmani
+@model List<Siparis>
+
+@{
+    ViewBag.Title = "List";
+
+    SiparisDetayManager siparisDetayManager = new SiparisDetayManager();
+    List<SiparisDetay> siparisDetay;
+}
+
+<div class="col-12">
+    <div class="row">
+        <div id="accordionFlushExample" class="accordion">
+            @foreach (var siparis in Model)
+            {
+                siparisDetay = siparisDetayManager.SiparisDetaylar(siparis.Id);
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#@("accordion-" + siparis.Id)" aria-expanded="false" aria-controls="@("accordion-" + siparis.Id)">
+                            @siparis.Tarih.ToString("dd/MM/yyyy HH:mm:ss") Tarihli Siparişiniz
+                        </button>
+                    </h2>
+                    <div id="@("accordion-" + siparis.Id)" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <div class="table-responsive">
+                                <table class="table table-responsive table-borderless">
+                                    <thead>
+                                        <tr class="bg-light">
+                                            <th scope="col" width="5%">Urun Id</th>
+                                            <th scope="col" width="20%">Urun Adı</th>
+                                            <th scope="col" width="20%">Ürün Adeti</th>
+                                            <th scope="col" class="text-end" width="20%"><span>Ürün Fiyatı</span></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="table-group-divider table-divider-color">
+                                        
+                                        @foreach (var item in siparisDetay)
+                                        {
+                                            <tr>
+                                                <td>@item.Urun.Id</td>
+                                                <td>@item.Urun.Ad</td>
+                                                <td>@item.Adet</td>
+                                                <td class="text-end"><span class="fw-bolder">@item.Tutar.ToString("C2")</span></td>
+                                            </tr>
+                                        }
+                                        <tr>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td class="text-end"><span class="fw-bolder">Toplam Fiyat: @siparis.ToplamFiyat.ToString("C2")</span></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+
+        @if (!Model.Any())
+        {
+            <div class="accordion-item">
+                <div class="accordion-body">
+                    Sipariş bulunamadı veya Sipariş yok?
+                </div>
+            </div>
+        }
+
+    </div>
+</div>

@@ -1,0 +1,42 @@
+D:\Ders&Calisma\2. SINIF\_proje\donem2\PastaneMenuVeSiparis\PastaneMenuVeSiparis.VeriTabaniErisimKatmani\bin\Debug\PastaneMenuVeSiparis.VeriTabaniErisimKatmani.dll.config
+D:\Ders&Calisma\2. SINIF\_proje\donem2\PastaneMenuVeSiparis\PastaneMenuVeSiparis.VeriTabaniErisimKatmani\bin\Debug\PastaneMenuVeSiparis.VeriTabaniErisimKatmani.dll
+D:\Ders&Calisma\2. SINIF\_proje\donem2\PastaneMenuVeSiparis\PastaneMenuVeSiparis.VeriTabaniErisimKatmani\bin\Debug\PastaneMenuVeSiparis.VeriTabaniErisimKatmani.pdb
+D:\Ders&Calisma\2. SINIF\_proje\donem2\PastaneMenuVeSiparis\PastaneMenuVeSiparis.VeriTabaniErisimKatmani\bin\Debug\EntityFramework.dll
+D:\Ders&Calisma\2. SINIF\_proje\donem2\PastaneMenuVeSiparis\PastaneMenuVeSiparis.VeriTabaniErisimKatmani\bin\Debug\EntityFramework.SqlServer.dll
+D:\Ders&Calisma\2. SINIF\_proje\donem2\PastaneMenuVeSiparis\PastaneMenuVeSiparis.VeriTabaniErisimKatmani\bin\Debug\PastaneMenuVeSiparis.VarlikKatmani.dll
+D:\Ders&Calisma\2. SINIF\_proje\donem2\PastaneMenuVeSiparis\PastaneMenuVeSiparis.VeriTabaniErisimKatmani\bin\Debug\PastaneMenuVeSiparis.VarlikKatmani.pdb
+D:\Ders&Calisma\2. SINIF\_proje\donem2\PastaneMenuVeSiparis\PastaneMenuVeSiparis.VeriTabaniErisimKatmani\bin\Debug\EntityFramework.xml
+D:\Ders&Calisma\2. SINIF\_proje\donem2\PastaneMenuVeSiparis\PastaneMenuVeSiparis.VeriTabaniErisimKatmani\bin\Debug\EntityFramework.SqlServer.xml
+D:\Ders&Calisma\2. SINIF\_proje\donem2\PastaneMenuVeSiparis\PastaneMenuVeSiparis.VeriTabaniErisimKatmani\obj\Debug\PastaneMenuVeSiparis.VeriTabaniErisimKatmani.csproj.AssemblyReference.cache
+D:\Ders&Calisma\2. SINIF\_proje\donem2\PastaneMenuVeSiparis\PastaneMenuVeSiparis.VeriTabaniErisimKatmani\obj\Debug\PastaneMenuVeSiparis.VeriTabaniErisimKatmani.csproj.CoreCompileInputs.cache
+D:\Ders&Calisma\2. SINIF\_proje\donem2\PastaneMenuVeSiparis\PastaneMenuVeSiparis.VeriTabaniErisimKatmani\obj\Debug\PastaneMenuVeSiparis.VeriTabaniErisimKatmani.csproj.CopyComplete
+D:\Ders&Calisma\2. SINIF\_proje\donem2\PastaneMenuVeSiparis\PastaneMenuVeSiparis.VeriTabaniErisimKatmani\obj\Debug\PastaneMenuVeSiparis.VeriTabaniErisimKatmani.dll
+D:\Ders&Calisma\2. SINIF\_proje\donem2\PastaneMenuVeSiparis\PastaneMenuVeSiparis.VeriTabaniErisimKatmani\obj\Debug\PastaneMenuVeSiparis.VeriTabaniErisimKatmani.pdb
+C:\Users\xarex\Desktop\PastaneMenuVeSiparis\PastaneMenuVeSiparis.VeriTabaniErisimKatmani\bin\Debug\PastaneMenuVeSiparis.VeriTabaniErisimKatmani.dll.config
+C:\Users\xarex\Desktop\PastaneMenuVeSiparis\PastaneMenuVeSiparis.VeriTabaniErisimKatmani\bin\Debug\PastaneMenuVeSiparis.VeriTabaniErisimKatmani.dll
+C:\Users\xarex\Desktop\PastaneMenuVeSiparis\PastaneMenuVeSiparis.VeriTabaniErisimKatmani\bin\Debug\PastaneMenuVeSiparis.VeriTabaniErisimKatmani.pdb
+C:\Users\xarex\Desktop\PastaneMenuVeSiparis\PastaneMenuVeSiparis.VeriTabaniErisimKatmani\bin\Debug\EntityFramework.dll
+C:\Users\xarex\Desktop\PastaneMenuVeSiparis\PastaneMenuVeSiparis.VeriTabaniErisimKatmani\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\xarex\Desktop\PastaneMenuVeSiparis\PastaneMenuVeSiparis.VeriTabaniErisimKatmani\bin\Debug\PastaneMenuVeSiparis.VarlikKatmani.dll
+C:\Users\xarex\Desktop\PastaneMenuVeSiparis\PastaneMenuVeSiparis.VeriTabaniErisimKatmani\bin\Debug\PastaneMenuVeSiparis.VarlikKatmani.pdb
+C:\Users\xarex\Desktop\PastaneMenuVeSiparis\PastaneMenuVeSiparis.VeriTabaniErisimKatmani\bin\Debug\EntityFramework.xml
+C:\Users\xarex\Desktop\PastaneMenuVeSiparis\PastaneMenuVeSiparis.VeriTabaniErisimKatmani\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\xarex\Desktop\PastaneMenuVeSiparis\PastaneMenuVeSiparis.VeriTabaniErisimKatmani\obj\Debug\PastaneMenuVeSiparis.VeriTabaniErisimKatmani.csproj.AssemblyReference.cache
+C:\Users\xarex\Desktop\PastaneMenuVeSiparis\PastaneMenuVeSiparis.VeriTabaniErisimKatmani\obj\Debug\PastaneMenuVeSiparis.VeriTabaniErisimKatmani.csproj.CoreCompileInputs.cache
+C:\Users\xarex\Desktop\PastaneMenuVeSiparis\PastaneMenuVeSiparis.VeriTabaniErisimKatmani\obj\Debug\PastaneMenuVeSiparis.VeriTabaniErisimKatmani.csproj.CopyComplete
+C:\Users\xarex\Desktop\PastaneMenuVeSiparis\PastaneMenuVeSiparis.VeriTabaniErisimKatmani\obj\Debug\PastaneMenuVeSiparis.VeriTabaniErisimKatmani.dll
+C:\Users\xarex\Desktop\PastaneMenuVeSiparis\PastaneMenuVeSiparis.VeriTabaniErisimKatmani\obj\Debug\PastaneMenuVeSiparis.VeriTabaniErisimKatmani.pdb
+C:\Users\xarex\Desktop\internet\PastaneMenuVeSiparis\PastaneMenuVeSiparis.VeriTabaniErisimKatmani\bin\Debug\PastaneMenuVeSiparis.VeriTabaniErisimKatmani.dll.config
+C:\Users\xarex\Desktop\internet\PastaneMenuVeSiparis\PastaneMenuVeSiparis.VeriTabaniErisimKatmani\bin\Debug\PastaneMenuVeSiparis.VeriTabaniErisimKatmani.dll
+C:\Users\xarex\Desktop\internet\PastaneMenuVeSiparis\PastaneMenuVeSiparis.VeriTabaniErisimKatmani\bin\Debug\PastaneMenuVeSiparis.VeriTabaniErisimKatmani.pdb
+C:\Users\xarex\Desktop\internet\PastaneMenuVeSiparis\PastaneMenuVeSiparis.VeriTabaniErisimKatmani\bin\Debug\EntityFramework.dll
+C:\Users\xarex\Desktop\internet\PastaneMenuVeSiparis\PastaneMenuVeSiparis.VeriTabaniErisimKatmani\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\xarex\Desktop\internet\PastaneMenuVeSiparis\PastaneMenuVeSiparis.VeriTabaniErisimKatmani\bin\Debug\PastaneMenuVeSiparis.VarlikKatmani.dll
+C:\Users\xarex\Desktop\internet\PastaneMenuVeSiparis\PastaneMenuVeSiparis.VeriTabaniErisimKatmani\bin\Debug\PastaneMenuVeSiparis.VarlikKatmani.pdb
+C:\Users\xarex\Desktop\internet\PastaneMenuVeSiparis\PastaneMenuVeSiparis.VeriTabaniErisimKatmani\bin\Debug\EntityFramework.xml
+C:\Users\xarex\Desktop\internet\PastaneMenuVeSiparis\PastaneMenuVeSiparis.VeriTabaniErisimKatmani\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\xarex\Desktop\internet\PastaneMenuVeSiparis\PastaneMenuVeSiparis.VeriTabaniErisimKatmani\obj\Debug\PastaneMenuVeSiparis.VeriTabaniErisimKatmani.csproj.AssemblyReference.cache
+C:\Users\xarex\Desktop\internet\PastaneMenuVeSiparis\PastaneMenuVeSiparis.VeriTabaniErisimKatmani\obj\Debug\PastaneMenuVeSiparis.VeriTabaniErisimKatmani.csproj.CoreCompileInputs.cache
+C:\Users\xarex\Desktop\internet\PastaneMenuVeSiparis\PastaneMenuVeSiparis.VeriTabaniErisimKatmani\obj\Debug\PastaneMenuVeSiparis.VeriTabaniErisimKatmani.csproj.CopyComplete
+C:\Users\xarex\Desktop\internet\PastaneMenuVeSiparis\PastaneMenuVeSiparis.VeriTabaniErisimKatmani\obj\Debug\PastaneMenuVeSiparis.VeriTabaniErisimKatmani.dll
+C:\Users\xarex\Desktop\internet\PastaneMenuVeSiparis\PastaneMenuVeSiparis.VeriTabaniErisimKatmani\obj\Debug\PastaneMenuVeSiparis.VeriTabaniErisimKatmani.pdb
